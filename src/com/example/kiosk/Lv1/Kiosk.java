@@ -12,11 +12,6 @@ public class Kiosk {
         int a;
 // whlie 문 들어가기와 나가기
         boolean exit = true;
-// 영화 정보
-        String movieName;
-        String type;
-        int seat;
-
 // 키오스크가 시작 부분
         System.out.println("영화관에 오신걸 환영 합니다!");
         System.out.println("원하시는 메뉴의 번호를 입력해주세요");
@@ -50,7 +45,6 @@ public class Kiosk {
                         exit = false;
                     }
 // 종료 하기
-
                 }else if (a == 0){
                     exit = false;
                 }
