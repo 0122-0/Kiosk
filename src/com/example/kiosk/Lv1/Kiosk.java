@@ -50,11 +50,9 @@ public class Kiosk {
                         exit = false;
                     }
 // 종료 하기
-                    if (a == 0) {
-                        exit = false;
-                    } else {
 
-                    }
+                }else if (a == 0){
+                    exit = false;
                 }
             }
         }
