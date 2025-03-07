@@ -13,18 +13,18 @@ public class Movie {
      List<Movie> Movie = new ArrayList<>();
 
     //생성자
-    Movie(String movieName, String type, String howLong, String howMany) {
-        this.movieName = movieName;
-        this.type = type;
-        this.howLong = howLong;
-        this.howMany = howMany;
+//    Movie(String movieName, String type, String howLong, String howMany) {
+//        this.movieName = movieName;
+//        this.type = type;
+//        this.howLong = howLong;
+//        this.howMany = howMany;
 
     }
 
 //    Newmovie(){
 //
 //    }
-}
+//}
 
 
 
