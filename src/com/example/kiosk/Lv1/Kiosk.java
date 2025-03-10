@@ -1,7 +1,5 @@
 package com.example.kiosk.Lv1;
 
-import com.example.kiosk.Movie;
-
 import java.util.Scanner;
 
 public class Kiosk {
