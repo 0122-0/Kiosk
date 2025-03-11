@@ -1,6 +1,6 @@
 package com.example.kiosk.Lv2;
 
-public class Movie {
+public class MeunItem {
     //속성
     String moviename;
     String type;
@@ -8,7 +8,7 @@ public class Movie {
     int seat;
 
     //생성자
-    public Movie(String moviename, String type, String howlong, int seat) {
+    public MeunItem(String moviename, String type, String howlong, int seat) {
         this.moviename = moviename;
         this.type = type;
         this.howlong = howlong;
