@@ -29,7 +29,7 @@ public class Snack {
         return this.info;
     }
 
-
+// Lv 3 누락 Lv 4 영화, 간식거리 클래스 생성
 
 
 }
