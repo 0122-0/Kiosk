@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // list 선언 및 초기화
-        List<MeunItem> meunItem = new ArrayList<MeunItem>();
+        List<MenuItem> menuItem = new ArrayList<MenuItem>();
     // add 함수를 통해 new movie에 List 삽입
 
-        meunItem.add(new MeunItem("태극기휘날리며","전쟁","상영시간 2시간 14분",24));
-        meunItem.add(new MeunItem("말할수 없는 비밀","로맨스","상영시간 1시간 58분",21));
-        meunItem.add(new MeunItem("반딧불이의 묘","전쟁/애니메이션","상영시간 1시간 32분",30));
+        menuItem.add(new MenuItem("태극기휘날리며","전쟁","상영시간 2시간 14분",24));
+        menuItem.add(new MenuItem("말할수 없는 비밀","로맨스","상영시간 1시간 58분",21));
+        menuItem.add(new MenuItem("반딧불이의 묘","전쟁/애니메이션","상영시간 1시간 32분",30));
 
         Scanner scanner = new Scanner(System.in);
 //메뉴부분 선택하기
@@ -32,9 +32,9 @@ public class Main {
 //영화 고르기
             if (checkNumber == 1) {
                 System.out.println("원하시는 영화의 번호를 입력 후 Enter를 쳐주세요");
-                System.out.println("1. "+ meunItem.get(0).getMovieName() + " // " + meunItem.get(0).getType() + " // " + meunItem.get(0).getHowlong() + " // 남은좌석: " + meunItem.get(0).getSeat());
-                System.out.println("2. "+ meunItem.get(1).getMovieName() + " // " + meunItem.get(1).getType() + " // " + meunItem.get(1).getHowlong() + " // 남은좌석: " + meunItem.get(1).getSeat());
-                System.out.println("3. "+ meunItem.get(2).getMovieName() + " // " + meunItem.get(2).getType() + " // " + meunItem.get(2).getHowlong() + " // 남은좌석: " + meunItem.get(2).getSeat());
+                System.out.println("1. "+ menuItem.get(0).getMovieName() + " // " + menuItem.get(0).getType() + " // " + menuItem.get(0).getHowlong() + " // 남은좌석: " + menuItem.get(0).getSeat());
+                System.out.println("2. "+ menuItem.get(1).getMovieName() + " // " + menuItem.get(1).getType() + " // " + menuItem.get(1).getHowlong() + " // 남은좌석: " + menuItem.get(1).getSeat());
+                System.out.println("3. "+ menuItem.get(2).getMovieName() + " // " + menuItem.get(2).getType() + " // " + menuItem.get(2).getHowlong() + " // 남은좌석: " + menuItem.get(2).getSeat());
                 System.out.println("0. 종료");
                 checkNumber = scanner.nextInt();
                 scanner.nextLine();

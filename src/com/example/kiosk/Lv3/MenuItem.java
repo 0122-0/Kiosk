@@ -1,14 +1,14 @@
-package com.example.kiosk.Lv2;
+package com.example.kiosk.Lv3;
 
-public class MeunItem {
+public class MenuItem {
     //속성
-    String moviename;
-    String type;
-    String howlong;
-    int seat;
+   private String moviename;
+   private String type;
+   private String howlong;
+   private int seat;
 
     //생성자
-    public MeunItem(String moviename, String type, String howlong, int seat) {
+    public MenuItem(String moviename, String type, String howlong, int seat) {
         this.moviename = moviename;
         this.type = type;
         this.howlong = howlong;

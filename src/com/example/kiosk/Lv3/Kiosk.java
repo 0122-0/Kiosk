@@ -8,16 +8,16 @@ import java.util.Scanner;
 
 public class Kiosk {
 // 속성
-     List<MeunItem> movie = new ArrayList<MeunItem>();
+     List<MenuItem> movie = new ArrayList<MenuItem>();
      Scanner scanner = new Scanner(System.in);
      int checkNumber;
      boolean exit = true;
 // 생성자
 
     public Kiosk(){
-        movie.add(new MeunItem("태극기휘날리며","전쟁","상영시간 2시간 14분",24));
-        movie.add(new MeunItem("말할수 없는 비밀","로맨스","상영시간 1시간 58분",21));
-        movie.add(new MeunItem("반딧불이의 묘","전쟁/애니메이션","상영시간 1시간 32분",30));
+        movie.add(new MenuItem("태극기휘날리며","전쟁","상영시간 2시간 14분",24));
+        movie.add(new MenuItem("말할수 없는 비밀","로맨스","상영시간 1시간 58분",21));
+        movie.add(new MenuItem("반딧불이의 묘","전쟁/애니메이션","상영시간 1시간 32분",30));
     }
 
 //    기능
@@ -34,6 +34,7 @@ public class Kiosk {
 //메뉴 고르기
             System.out.println("-------------------------");
             System.out.println("1.영화 예매 하기");
+
             System.out.println("원하시는 메뉴의 번호를 입력 후 Enter를 쳐주세요");
             checkNumber = scanner.nextInt();
 //영화 고르기

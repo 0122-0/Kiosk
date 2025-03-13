@@ -11,12 +11,14 @@ public class Main {
 // whlie 문 들어가기와 나가기
         boolean exit = true;
 // 키오스크가 시작 부분
-        System.out.println("영화관에 오신걸 환영 합니다!");
-        System.out.println("원하시는 메뉴의 번호를 입력해주세요");
+        System.out.println("여기는 계산깁니다 히히");
+        System.out.println("숫자를 입력해주세요");
+
         while (exit) {
 //메뉴 고르기
             System.out.println("-------------------------");
             System.out.println("1.영화 예매 하기");
+            System.out.println("2.간식 구매");
             checkNumber = scanner.nextInt();
 //영화 고르기
             if (checkNumber == 1) {

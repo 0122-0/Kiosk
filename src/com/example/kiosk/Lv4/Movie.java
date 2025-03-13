@@ -1,11 +1,14 @@
 package com.example.kiosk.Lv4;
 
-public class Movie {
+import java.awt.Menu;
+
+public class Movie extends MenuItem {
     //속성
-   String moviename;
-   String type;
-   String howlong;
-   int seat;
+
+   private String moviename;
+   private String type;
+   private String howlong;
+   private int seat;
 
     //생성자
     public Movie(String moviename, String type, String howlong, int seat) {
@@ -15,22 +18,35 @@ public class Movie {
         this.seat = seat;
     }
 
-    //메서드
-    //게터
+    void setMovieName(String moviename) {
+        this.moviename = moviename;
+    }
+
     String getMovieName() {
         return this.moviename;
+    }
+
+    void setType(String type) {
+        this.type = type;
     }
 
     String getType(){
         return this.type;
     }
 
+    void setHowlong(String howlong) {
+        this.howlong = howlong;
+    }
+
     String getHowlong(){
         return this.howlong;
+    }
+
+    void setSeat(int seat) {
+        this.seat = seat;
     }
 
     int getSeat(){
         return this.seat;
     }
-
 }

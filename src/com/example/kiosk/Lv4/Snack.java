@@ -1,35 +1,40 @@
 package com.example.kiosk.Lv4;
 
-public class Snack {
+public class Snack extends MenuItem {
     //속성
      String snackname;
-     double howmuch ;
+     int howmuch ;
      String info ;
 
-
-
     //생성자
-    public Snack(String snackname, double howmuch, String info) {
+    public Snack(String snackname, int howmuch, String info) {
         this.snackname = snackname;
         this.howmuch = howmuch;
         this.info = info;
     }
 
-    //메서드
-    //게터
+    void snackName(String snackname) {
+        this.snackname = snackname;
+    }
+
     String getSnacknameName() {
         return this.snackname;
     }
 
-    double getHowmuch(){
+    void setHowmuch(int howmuch) {
+        this.howmuch = howmuch;
+    }
+
+    int getHowmuch(){
         return this.howmuch;
+    }
+
+    void setInfo(String info) {
+        this.info = info;
     }
 
     String getInfo(){
         return this.info;
     }
-
-// Lv 3 누락 Lv 4 영화, 간식거리 클래스 생성
-
 
 }
