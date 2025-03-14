@@ -10,12 +10,12 @@ public class Menu {
    private List<MenuItem> items = new ArrayList<>();
    private String category;
 
-    int checkNumber;
+    // 카테고리 식별
     public Menu(List<MenuItem> items,String category) {
         this.items = items;
         this.category = category;
     }
-
+    // 영화 간식을 카테고리로 나눠서 출력해주기
     public void printMenu(){
 
         if(category.equals("movie")){
@@ -30,7 +30,7 @@ public class Menu {
             }
         }
     }
-
+    // 선택한 메뉴 보여주기
     public void saveMenu(int i){
 
         if(category.equals("movie")){

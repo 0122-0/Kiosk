@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 public class Kiosk {
     // 속성
-    Scanner scanner = new Scanner(System.in);
-    public int checkNumber;
+    private Scanner scanner = new Scanner(System.in);
+    private int checkNumber;
 
     private List<Menu> menuList;
 
@@ -20,6 +20,7 @@ public class Kiosk {
 
 
     //    기능
+    // 키오스크 시작
     public void start() {
         do {
             System.out.println("-------------------------");
@@ -31,7 +32,7 @@ public class Kiosk {
             selectMenu();
         } while (checkNumber != 0);
     }
-
+    // 카테고리 고르기
     public void selectMenu() {
 
 
@@ -47,7 +48,7 @@ public class Kiosk {
             System.out.println("잘못된 입력입니다.");
         }
     }
-
+    // 티켓 사기
     public void buyTicket() {
 
         checkNumber = scanner.nextInt();
@@ -69,7 +70,7 @@ public class Kiosk {
         }
 
     }
-
+    // 간식 사기
     public void buySnack() {
 
         System.out.println("0. 뒤로가기");

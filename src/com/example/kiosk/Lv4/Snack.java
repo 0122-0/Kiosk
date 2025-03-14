@@ -2,9 +2,9 @@ package com.example.kiosk.Lv4;
 
 public class Snack extends MenuItem {
     //속성
-     String snackname;
-     int howmuch ;
-     String info ;
+   private   String snackname;
+   private  int howmuch ;
+   private String info ;
 
     //생성자
     public Snack(String snackname, int howmuch, String info) {
@@ -12,28 +12,28 @@ public class Snack extends MenuItem {
         this.howmuch = howmuch;
         this.info = info;
     }
-
-    void snackName(String snackname) {
+    //기능
+   public void snackName(String snackname) {
         this.snackname = snackname;
     }
 
-    String getSnacknameName() {
+   public String getSnacknameName() {
         return this.snackname;
     }
 
-    void setHowmuch(int howmuch) {
+   public void setHowmuch(int howmuch) {
         this.howmuch = howmuch;
     }
 
-    int getHowmuch(){
+   public int getHowmuch(){
         return this.howmuch;
     }
 
-    void setInfo(String info) {
+   public void setInfo(String info) {
         this.info = info;
     }
 
-    String getInfo(){
+   public String getInfo(){
         return this.info;
     }
 

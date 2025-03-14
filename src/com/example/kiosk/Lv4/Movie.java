@@ -17,36 +17,36 @@ public class Movie extends MenuItem {
         this.howlong = howlong;
         this.seat = seat;
     }
-
-    void setMovieName(String moviename) {
+    //기능
+   public void setMovieName(String moviename) {
         this.moviename = moviename;
     }
 
-    String getMovieName() {
+    public String getMovieName() {
         return this.moviename;
     }
 
-    void setType(String type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    String getType(){
+    public String getType(){
         return this.type;
     }
 
-    void setHowlong(String howlong) {
+    public void setHowlong(String howlong) {
         this.howlong = howlong;
     }
 
-    String getHowlong(){
+    public String getHowlong(){
         return this.howlong;
     }
-
-    void setSeat(int seat) {
-        this.seat = seat;
-    }
-
-    int getSeat(){
-        return this.seat;
-    }
+//구현 못함
+//    void setSeat(int seat) {
+//        this.seat = seat;
+//    }
+//
+//    int getSeat(){
+//        return this.seat;
+//    }
 }
